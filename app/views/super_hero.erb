@@ -1,1 +1,9 @@
-
+<body style="background-color: blue;">
+<h1><%=@team.name%></h1>
+<h2>Team Motto: <%=@team.motto%></h2><br><br>
+<p><%@hero.each do |hero|%>
+    <h2 style = "color: red;">Hero Name: <%="#{hero.name}"%></h2>
+    <p style="color:blue;">Hero Power: <%=hero.power%><br>
+    Hero Biography: <%=hero.bio%></p>
+    <%end%>
+</p></body>
